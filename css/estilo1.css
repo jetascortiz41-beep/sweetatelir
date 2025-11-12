@@ -1,0 +1,78 @@
+.cabecera
+{
+width: 100%;
+max-height: 10%;
+}
+.menu
+{
+display: inline-block;/*bloque en linea horizontal*/
+background-color: burlywood;
+width: 100%;
+}
+.lista
+{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: brown;
+font-size: 14pt;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.lista > li{
+display: inline-block;
+position: relative;
+}
+.lista > li a {
+    text-decoration: none;
+    color:brown;
+    padding: 15px 20px;
+    display: block;    
+}
+.lista > li a:hover{
+    color: black;
+background-color: rgb(237, 125, 14);
+}
+.sublista{
+
+ display: none;/*no se muestre inicialmente*/
+position:absolute;/*que no ocupa campo de lista*/
+background-color: rgb(146, 85, 6);
+list-style: none;/*sin puntitos*/
+margin: 0;
+padding: 0;
+min-width: 180px;/*ancho minimo*/
+z-index: 1000;/*se muestre encima de otros elementos*/ 
+}
+
+.sublista li a{ /* editar el estilo de los items*/
+display: block;/*cada enlace ocupa toda la fila*/
+padding: 10px;
+color: wheat;
+text-decoration: none;
+}
+.sublista li a:hover{
+background-color:brown;
+color: sandybrown;
+}
+.lista > li:hover .sublista{
+    display: block;
+}
+.productos{
+    background-color: aliceblue;
+    border: 1px solid beige;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 2px 6px rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    text-align: center;
+}
+.productos h3{
+    color: brown;
+    margin-bottom: 10px;
+}
+.productos p{
+    color:black;
+}

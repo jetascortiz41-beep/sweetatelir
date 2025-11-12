@@ -1,0 +1,60 @@
+
+.contenedor {
+    display: flex;
+    background-color: rgb(173, 88, 88);
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    gap: 20px; /* separación entre bloques */
+}
+
+.contenedor2 {
+    display: flex;
+    background-color: rgb(236, 148, 148);
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    gap: 5px;
+}
+.Texto1
+{
+    font-size: 2rem;
+    text-align: center;
+}
+.Texto2
+{
+    font-size: 1.5rem; /* más pequeño que el título principal */
+    font-weight: 500;
+    color:black;  /* marrón oscuro para buena legibilidad */
+    margin-bottom: 10px;
+    
+}
+.Texto1, .Imagen2,
+.Texto2, .Imagen3 {
+    width:300%;           
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.video-container {
+    width: 100%;            /* ocupa todo el ancho disponible */
+    text-align: center;      /* centra el video */
+    margin-top: 20px;        /* separación del texto */
+    clear: both;             /* evita que flote junto a otros elementos */
+}
+
+.video-container iframe,
+.video-container video {
+    max-width: 100%;         /* se adapta al contenedor */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.imgtext,
+.Imagen2 img,
+.Imagen3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
